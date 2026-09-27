@@ -2,14 +2,19 @@
 type: guide
 title: Programming the Auerswald TFS-Dialog 200 door intercom
 description: Enter programming mode on an Auerswald TFS-Dialog 200 via a PBX phone and set call targets, door-opener, light, timing, volume and PIN.
-tags: [auerswald, doorbell, intercom, pbx, dtmf]
+tags:
+- auerswald
+- doorbell
+- intercom
+- pbx
+- dtmf
 status: draft
 resource:
 created: 2026-09-27T19:27:15Z
-updated: 2026-09-27T19:27:15Z
+updated: 2026-09-27T19:31:36Z
 generated:
   by: claude/opus-5.5
-  at: 2026-09-27T19:27:15Z
+  at: 2026-09-27T19:31:36Z
 verified: []
 stale_after: 2027-09-27T19:27:15Z
 sources:
@@ -131,6 +136,19 @@ hold bell button 1 for 5 s  →  dial <extension> on an internal phone
 2 1 <target>
 hang up
 ```
+
+## Everyday use (during a door call)
+
+| Dial | Effect |
+|---|---|
+| `1` | Force the speech path open (normally opens automatically on speech) |
+| `#9` | Open the door (factory sequence) |
+| `#8` | Switch the stair light (factory sequence) |
+| `##1`–`##4` | Trigger a/b switching module with frequency 1–4 |
+| `#*` | End the door call (or just hang up) |
+
+Calling the intercom from an internal phone (dial `<extension>`) to start a door call only works
+when it is powered by the bell transformer, not from the a/b port alone.
 
 ## Verify
 
