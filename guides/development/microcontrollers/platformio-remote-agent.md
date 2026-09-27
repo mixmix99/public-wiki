@@ -3,16 +3,18 @@ type: guide
 title: PlatformIO Remote Agent setup
 description: Install and run PlatformIO's Remote Agent on a Raspberry Pi to flash microcontrollers remotely instead of from the PC directly.
 tags: [platformio, microcontroller, raspberry-pi, arduino]
-status: stable
-resource: 'private:/sources/development/microcontrollers/2026-09-27-platformio-remote-agent.md'
+status: draft
+resource:
 created: 2026-09-27T17:47:57Z
-updated: 2026-09-27T17:47:57Z
+updated: 2026-09-27T17:56:00Z
 generated:
   by: claude/sonnet-5
   at: 2026-09-27T17:47:57Z
 verified: []
 stale_after: 2027-09-27T17:47:57Z
-sources: [{id: 2026-09-27-platformio-remote-agent, resource: 'private:/sources/development/microcontrollers/2026-09-27-platformio-remote-agent.md'}]
+sources:
+- {id: 2026-09-27-platformio-remote-agent, resource: 'private:/sources/development/microcontrollers/2026-09-27-platformio-remote-agent.md'}
+- {id: platformio-community-rpi-remote-agent, resource: 'https://community.platformio.org/t/howto-raspberry-pi-3-as-remote-agent-oct-2020/16700'}
 relations: []
 superseded_by:
 ---
