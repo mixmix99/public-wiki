@@ -4,6 +4,8 @@
 
 ## Folders
 
-- [ai](ai/index.md) — 1 page
+- [administration](administration/index.md) — 3 pages
+- [ai](ai/index.md) — 2 pages
 - [development](development/index.md) — 2 pages
 - [hardware](hardware/index.md) — 1 page
+- [network](network/index.md) — 1 page

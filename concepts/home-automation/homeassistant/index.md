@@ -4,5 +4,6 @@
 
 ## Pages
 
+- [Wake-on-LAN from a container on a Docker bridge network](docker-bridge-wake-on-lan.md) — Why a WoL magic packet sent from inside a Docker bridge-networked container never reaches the LAN, and the workarounds (host networking, macvlan, or a host-networked relay service).
 - [Multi-year Home Assistant dashboards from long-term statistics](long-term-statistics-dashboards.md) — Build year-by-year charts from Home Assistant's long-term statistics, generate the dashboard from a script, and port it to another instance by remapping entities.
 - [vag_connect EU Data Act fallback on PPE vehicles](vag-connect-eu-data-act-ppe.md) — How the vag_connect integration falls back to the EU Data Act portal, the known empty-feed bug on VW Group PPE vehicles, and why re-importing an export is no workaround.

@@ -4,4 +4,5 @@
 
 ## Pages
 
+- [Headless browser automation in a rootless container](headless-browser-rootless-container.md) — Getting a CDP-driven headless Chrome/Chromium working inside a rootless container: missing shared libraries and a fontconfig crash.
 - [Building an OpenClaw agent skill](openclaw-skill-development.md) — How to structure a skill folder, SKILL.md frontmatter, and a Python CLI pattern for OpenClaw agent skills.
