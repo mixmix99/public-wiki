@@ -2,19 +2,26 @@
 type: guide
 title: 'Zed: region folding with custom-code-folding'
 description: 'Set up the custom-code-folding Zed extension for #region/#endregion folding, including the fix needed for C#.'
-tags: [zed, editor, folding, csharp, extensions]
+tags:
+- zed
+- editor
+- folding
+- csharp
+- extensions
 status: draft
 resource: https://github.com/ali-ramadhan/zed-custom-code-folding
 created: 2026-09-27T17:47:57Z
-updated: 2026-09-27T17:56:00Z
+updated: 2026-09-27T19:04:10Z
 generated:
-  by: claude/sonnet-5
-  at: 2026-09-27T17:47:57Z
+  by: hermes/gpt-6-sol
+  at: 2026-09-27T19:04:10Z
 verified: []
 stale_after: 2027-09-27T17:47:57Z
 sources:
-- {id: 2026-09-27-zed-custom-code-folding, resource: 'private:/sources/development/editors/2026-09-27-zed-custom-code-folding.md'}
-- {id: zed-custom-code-folding-repo, resource: 'https://github.com/ali-ramadhan/zed-custom-code-folding'}
+- id: 2026-09-27-zed-custom-code-folding
+  resource: private:/sources/development/editors/2026-09-27-zed-custom-code-folding.md
+- id: zed-custom-code-folding-repo
+  resource: https://github.com/ali-ramadhan/zed-custom-code-folding
 relations: []
 superseded_by:
 ---
@@ -108,3 +115,7 @@ shortcuts (Windows):
 ## Related
 
 - [zed-custom-code-folding on GitHub](https://github.com/ali-ramadhan/zed-custom-code-folding)
+
+## Source captures (private)
+
+- [Original Zed custom-folding notes (private)](../../../../../sources/development/editors/2026-09-27-zed-custom-code-folding.md)

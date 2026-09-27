@@ -9,10 +9,10 @@ tags:
 status: draft
 resource:
 created: 2026-09-27T18:42:08Z
-updated: 2026-09-27T18:42:08Z
+updated: 2026-09-27T19:04:10Z
 generated:
   by: hermes/gpt-6-sol
-  at: 2026-09-27T18:42:08Z
+  at: 2026-09-27T19:04:10Z
 verified: []
 stale_after: 2028-09-26T18:42:08Z
 sources:
@@ -77,3 +77,9 @@ For implementers: [the later OKF v0.2 specification](https://github.com/GoogleCl
 [^google-okf-intro]: McVeety and Hormati, *Introducing the Open Knowledge Format*.
 [^okf-v02-spec]: GoogleCloudPlatform, *Open Knowledge Format v0.2 specification*.
 [^rohit-llm-wiki-v2]: rohitg00, *LLM Wiki v2*.
+
+## Source captures (private)
+
+- [Original source notes (private)](../../../../../sources/ai/tooling/2026-09-27-llm-wiki-pattern.md)
+- [Original source notes (private)](../../../../../sources/ai/tooling/2026-09-27-open-knowledge-format-introduction.md)
+- [Original source notes (private)](../../../../../sources/ai/tooling/2026-09-27-llm-wiki-v2-pattern.md)

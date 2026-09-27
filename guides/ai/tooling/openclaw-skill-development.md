@@ -10,13 +10,15 @@ tags:
 status: draft
 resource:
 created: 2026-09-27T17:15:28Z
-updated: 2026-09-27T17:38:00Z
+updated: 2026-09-27T19:04:10Z
 generated:
-  by: claude/sonnet-5
-  at: 2026-09-27T17:15:28Z
+  by: hermes/gpt-6-sol
+  at: 2026-09-27T19:04:10Z
 verified: []
 stale_after: 2027-09-27T17:15:28Z
-sources: [{id: 2026-09-27-openclaw-skills-development, resource: 'private:/sources/ai/tooling/2026-09-27-openclaw-skills-development.md'}]
+sources:
+- id: 2026-09-27-openclaw-skills-development
+  resource: private:/sources/ai/tooling/2026-09-27-openclaw-skills-development.md
 relations: []
 superseded_by:
 ---
@@ -240,3 +242,7 @@ imperative ("Add a page") and interrogative ("What pages are in the wiki?") form
 
 - Applies to any OpenClaw skill implementation; the same Python CLI + `uv run` pattern generalizes
   to other agent-skill frameworks that shell out to a script.
+
+## Source captures (private)
+
+- [Original OpenClaw skill-development notes (private)](../../../../../sources/ai/tooling/2026-09-27-openclaw-skills-development.md)

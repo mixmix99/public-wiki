@@ -9,18 +9,23 @@ tags:
 status: draft
 resource:
 created: 2026-09-27T17:15:28Z
-updated: 2026-09-27T17:38:00Z
+updated: 2026-09-27T19:04:10Z
 generated:
-  by: claude/sonnet-5
-  at: 2026-09-27T17:15:28Z
+  by: hermes/gpt-6-sol
+  at: 2026-09-27T19:04:10Z
 verified: []
 stale_after: 2028-09-26T17:15:28Z
 sources:
-- {id: 2026-09-27-current-model-overview, resource: 'private:/sources/ai/models/2026-09-27-current-model-overview.md'}
-- {id: benchlm-coding, resource: 'https://benchlm.ai/coding'}
-- {id: swe-bench-verified, resource: 'https://llm-stats.com/benchmarks/swe-bench-verified'}
-- {id: lmarena-leaderboard, resource: 'https://lmarena.ai/leaderboard'}
-- {id: openrouter-rankings, resource: 'https://openrouter.ai/rankings'}
+- id: 2026-09-27-current-model-overview
+  resource: private:/sources/ai/models/2026-09-27-current-model-overview.md
+- id: benchlm-coding
+  resource: https://benchlm.ai/coding
+- id: swe-bench-verified
+  resource: https://llm-stats.com/benchmarks/swe-bench-verified
+- id: lmarena-leaderboard
+  resource: https://lmarena.ai/leaderboard
+- id: openrouter-rankings
+  resource: https://openrouter.ai/rankings
 relations: []
 superseded_by:
 ---
@@ -92,3 +97,7 @@ Check the live listings rather than a point-in-time copy:
 - [SWE-bench Verified](https://llm-stats.com/benchmarks/swe-bench-verified)
 - [LMArena leaderboard](https://lmarena.ai/leaderboard) — human-preference ratings
 - [OpenRouter rankings](https://openrouter.ai/rankings) — usage and per-model pricing
+
+## Source captures (private)
+
+- [Original source notes (private)](../../../../../sources/ai/models/2026-09-27-current-model-overview.md)
