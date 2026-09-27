@@ -6,3 +6,4 @@
 
 - [ai](ai/index.md) — 1 page
 - [development](development/index.md) — 2 pages
+- [hardware](hardware/index.md) — 1 page
