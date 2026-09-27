@@ -4,4 +4,4 @@
 
 ## Folders
 
-- [ai](ai/index.md) — 2 pages
+- [ai](ai/index.md) — 3 pages
