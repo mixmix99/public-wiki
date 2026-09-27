@@ -5,3 +5,4 @@
 ## Folders
 
 - [ai](ai/index.md) — 3 pages
+- [home-automation](home-automation/index.md) — 3 pages
