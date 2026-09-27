@@ -10,13 +10,13 @@ tags:
 status: draft
 resource:
 created: 2026-09-27T17:15:28Z
-updated: 2026-09-27T17:15:28Z
+updated: 2026-09-27T17:38:00Z
 generated:
   by: claude/sonnet-5
   at: 2026-09-27T17:15:28Z
 verified: []
 stale_after: 2027-09-27T17:15:28Z
-sources: []
+sources: [{id: 2026-09-27-openclaw-skills-development, resource: 'private:/sources/ai/tooling/2026-09-27-openclaw-skills-development.md'}]
 relations: []
 superseded_by:
 ---

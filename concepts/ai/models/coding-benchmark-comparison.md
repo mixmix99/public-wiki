@@ -9,13 +9,18 @@ tags:
 status: draft
 resource:
 created: 2026-09-27T17:15:28Z
-updated: 2026-09-27T17:15:28Z
+updated: 2026-09-27T17:38:00Z
 generated:
   by: claude/sonnet-5
   at: 2026-09-27T17:15:28Z
 verified: []
 stale_after: 2028-09-26T17:15:28Z
-sources: []
+sources:
+- {id: 2026-09-27-current-model-overview, resource: 'private:/sources/ai/models/2026-09-27-current-model-overview.md'}
+- {id: benchlm-coding, resource: 'https://benchlm.ai/coding'}
+- {id: swe-bench-verified, resource: 'https://llm-stats.com/benchmarks/swe-bench-verified'}
+- {id: lmarena-leaderboard, resource: 'https://lmarena.ai/leaderboard'}
+- {id: openrouter-rankings, resource: 'https://openrouter.ai/rankings'}
 relations: []
 superseded_by:
 ---
@@ -81,6 +86,9 @@ don't rely on a snapshot more than a few weeks old.
 
 ## References
 
-- Live leaderboards of this kind are typically published by benchmark aggregator sites, model
-  hosting/routing marketplaces (which also track per-model pricing), and crowd-sourced arena sites
-  — check current listings there rather than a point-in-time copy.
+Check the live listings rather than a point-in-time copy:
+
+- [BenchLM coding leaderboard](https://benchlm.ai/coding) — aggregate coding score
+- [SWE-bench Verified](https://llm-stats.com/benchmarks/swe-bench-verified)
+- [LMArena leaderboard](https://lmarena.ai/leaderboard) — human-preference ratings
+- [OpenRouter rankings](https://openrouter.ai/rankings) — usage and per-model pricing

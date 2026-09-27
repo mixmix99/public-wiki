@@ -11,13 +11,13 @@ tags:
 status: draft
 resource:
 created: 2026-09-27T17:15:27Z
-updated: 2026-09-27T17:15:27Z
+updated: 2026-09-27T17:38:00Z
 generated:
   by: claude/sonnet-5
   at: 2026-09-27T17:15:27Z
 verified: []
 stale_after: 2028-09-26T17:15:27Z
-sources: []
+sources: [{id: 2026-09-27-kv-cache-vram-measurements, resource: 'private:/sources/ai/models/2026-09-27-kv-cache-vram-measurements.md'}]
 relations: []
 superseded_by:
 ---
@@ -90,6 +90,8 @@ worth checking before assuming a large model "won't fit."
 
 ## Related
 
+- [Comparing LLMs by coding benchmark](coding-benchmark-comparison.md) — choosing which model is
+  worth fitting in the first place.
 - Applies to any self-hosted LLM serving setup (Ollama, vLLM, llama.cpp, etc.) on VRAM-constrained
   hardware.
 
