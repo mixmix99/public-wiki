@@ -5,4 +5,5 @@
 ## Folders
 
 - [access-points](access-points/index.md) — 8 pages
+- [dns](dns/index.md) — 1 page
 - [vpn](vpn/index.md) — 2 pages

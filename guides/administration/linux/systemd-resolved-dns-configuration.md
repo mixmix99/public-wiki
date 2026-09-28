@@ -2,19 +2,25 @@
 type: guide
 title: Configuring DNS resolution with systemd-resolved
 description: Set up systemd-resolved for asynchronous, cached DNS resolution on a Linux host, including the symlink needed to actually use it and a Proxmox LXC gotcha.
-tags: [linux, dns, systemd, resolved]
+tags:
+- linux
+- dns
+- systemd
+- resolved
 status: draft
 resource:
 created: 2026-09-28T17:06:07Z
-updated: 2026-09-28T17:06:07Z
+updated: 2026-09-28T18:56:03Z
 generated:
   by: claude/sonnet-5
-  at: 2026-09-28T17:06:07Z
+  at: 2026-09-28T18:56:03Z
 verified: []
 stale_after: 2027-09-28T17:06:07Z
 sources:
 - id: 2026-09-28-storage-and-dns-tools
-  resource: 'private:/sources/administration/linux/2026-09-28-storage-and-dns-tools.md'
+  resource: private:/sources/administration/linux/2026-09-28-storage-and-dns-tools.md
+- id: 2026-09-28-static-resolv-conf
+  resource: private:/sources/administration/linux/2026-09-28-static-resolv-conf.md
 relations: []
 superseded_by:
 ---
@@ -89,6 +95,41 @@ watch -n 1 resolvectl statistics
   itself (and the service restarted), not via `/etc/resolv.conf`, since that file is now just a
   symlink to the resolved stub.
 
+## Alternative: static resolv.conf
+
+`systemd-resolved` isn't the only way to pin a DNS server on Ubuntu/Debian. A simpler, more
+"static" alternative: delete the `/etc/resolv.conf` symlink entirely and replace it with a plain,
+non-symlinked file that nothing manages or regenerates automatically.
+
+```bash
+sudo rm /etc/resolv.conf
+echo "nameserver <dns-server-ip>
+options edns0 trust-ad
+search <search-domain>" | sudo tee /etc/resolv.conf > /dev/null
+sudo chmod 644 /etc/resolv.conf
+```
+
+Verify with:
+
+```bash
+cat /etc/resolv.conf
+```
+
+**Trade-offs versus `systemd-resolved`:**
+
+- No local caching or asynchronous/parallel resolution — every lookup goes straight to the
+  configured server(s).
+- It permanently overrides whatever DHCP or other network management would otherwise set — useful
+  when that's exactly the point (a server that must never silently pick up a different resolver),
+  but it means the file has to be revisited manually if the network's DNS setup changes, and
+  anything that expects to manage `/etc/resolv.conf` (NetworkManager, `systemd-resolved` itself,
+  DHCP client hooks) will either fight with it or silently have no effect.
+- No `resolvectl`-style per-interface visibility or statistics — just the one flat file.
+
+Use this when a host needs a DNS setting that absolutely will not change without a manual edit
+(e.g. deliberately bypassing DHCP-provided DNS); use `systemd-resolved` (above) for the caching,
+async resolution and per-interface flexibility instead.
+
 ## Related
 
 <None yet.>
@@ -96,3 +137,4 @@ watch -n 1 resolvectl statistics
 ## Sources
 
 - [Legacy wiki.js: DNS Resolution with resolved](../../../../../sources/administration/linux/2026-09-28-storage-and-dns-tools.md) — private source
+- [Legacy wiki.js (de, translated): Ubuntu static resolv.conf](../../../../../sources/administration/linux/2026-09-28-static-resolv-conf.md) — private source; German-only wiki.js page, no English original existed

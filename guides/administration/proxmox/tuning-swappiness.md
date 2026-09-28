@@ -2,19 +2,24 @@
 type: guide
 title: Reducing swap usage on a hypervisor host to protect SSD lifespan
 description: Lower Linux swappiness on a Proxmox VE (or any Linux) host to reduce swap-to-SSD writes, with the commands to check, change and verify it.
-tags: [proxmox, linux, swap, ssd, performance]
+tags:
+- proxmox
+- linux
+- swap
+- ssd
+- performance
 status: draft
 resource:
 created: 2026-09-28T17:03:37Z
-updated: 2026-09-28T17:03:37Z
+updated: 2026-09-28T18:55:38Z
 generated:
   by: claude/sonnet-5
-  at: 2026-09-28T17:03:37Z
+  at: 2026-09-28T18:55:38Z
 verified: []
 stale_after: 2027-09-28T17:03:37Z
 sources:
 - id: 2026-09-28-proxmox-helper-tweaks
-  resource: 'private:/sources/administration/proxmox/2026-09-28-proxmox-helper-tweaks.md'
+  resource: private:/sources/administration/proxmox/2026-09-28-proxmox-helper-tweaks.md
 relations: []
 superseded_by:
 ---
@@ -86,6 +91,8 @@ cat /proc/sys/vm/swappiness
 
 - [Removing the Proxmox VE subscription notice](removing-proxmox-subscription-notice.md) — another
   small generic Proxmox VE host tweak from the same source.
+- [Exposing AMD Ryzen sensors on Proxmox VE / Debian](amd-ryzen-sensors.md) — another small generic
+  Proxmox VE host tweak.
 
 ## Sources
 

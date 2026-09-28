@@ -5,6 +5,7 @@
 ## Pages
 
 - [Automatic Let's Encrypt certificates on a hypervisor via ACME DNS-01](acme-dns-01-lets-encrypt.md) — Set up automatic Let's Encrypt certificates on Proxmox VE nodes via the ACME DNS-01 challenge with a DNS provider plugin, including the config-encoding workaround for credentials containing newlines.
+- [Exposing AMD Ryzen sensors on Proxmox VE / Debian](amd-ryzen-sensors.md) — Install lm-sensors and run sensors-detect to expose AMD Ryzen temperature/fan sensors on a Proxmox VE or Debian host.
 - [GPU passthrough on Proxmox VE](gpu-passthrough-setup.md) — Step-by-step GPU passthrough setup on Proxmox VE for AMD, Intel and NVIDIA GPUs: IOMMU, VFIO binding, VM assignment, and the Error 43 workaround.
 - [A private NAT network for internal VMs on a Hetzner root server](hetzner-private-nat-network.md) — Give internal-only Proxmox VMs outbound internet access via a NAT bridge on a Hetzner dedicated server, without exposing them on the public interface.
 - [Installing Proxmox VE on a Hetzner dedicated server via the Rescue System](install-on-hetzner-rescue-system.md) — Use Hetzner's Rescue System plus a QEMU-hosted installer to install Proxmox VE on a dedicated root server that has no physical console access.

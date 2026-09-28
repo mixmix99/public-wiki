@@ -2,19 +2,22 @@
 type: guide
 title: Removing the Proxmox VE subscription notice
 description: Patch the community/no-subscription Proxmox VE web UI to stop showing the 'no valid subscription' login dialog, and how to revert it.
-tags: [proxmox, subscription, web-ui]
+tags:
+- proxmox
+- subscription
+- web-ui
 status: draft
 resource:
 created: 2026-09-28T17:03:37Z
-updated: 2026-09-28T17:03:37Z
+updated: 2026-09-28T18:55:38Z
 generated:
   by: claude/sonnet-5
-  at: 2026-09-28T17:03:37Z
+  at: 2026-09-28T18:55:38Z
 verified: []
 stale_after: 2027-09-28T17:03:37Z
 sources:
 - id: 2026-09-28-proxmox-helper-tweaks
-  resource: 'private:/sources/administration/proxmox/2026-09-28-proxmox-helper-tweaks.md'
+  resource: private:/sources/administration/proxmox/2026-09-28-proxmox-helper-tweaks.md
 relations: []
 superseded_by:
 ---
@@ -77,6 +80,8 @@ Three ways to undo the change:
 
 - [Reducing swap usage on a hypervisor host to protect SSD lifespan](tuning-swappiness.md) — another
   small generic Proxmox VE host tweak from the same source.
+- [Exposing AMD Ryzen sensors on Proxmox VE / Debian](amd-ryzen-sensors.md) — another small generic
+  Proxmox VE host tweak.
 
 ## Sources
 

@@ -2,14 +2,21 @@
 type: concept
 title: NVIDIA open kernel module dropping Pascal GPU support
 description: TrueNAS Scale (and other distros) moving to NVIDIA's open-source kernel module drops hardware support for Pascal-generation GPUs, silently breaking transcoding/CUDA workloads.
-tags: [nvidia, gpu, truenas, linux, drivers, jellyfin, transcoding]
+tags:
+- nvidia
+- gpu
+- truenas
+- linux
+- drivers
+- jellyfin
+- transcoding
 status: draft
 resource:
 created: 2026-09-27T19:54:27Z
-updated: 2026-09-27T19:54:27Z
+updated: 2026-09-28T18:55:38Z
 generated:
   by: claude/sonnet-5
-  at: 2026-09-27T19:54:27Z
+  at: 2026-09-28T18:55:38Z
 verified: []
 stale_after: 2028-09-26T19:54:27Z
 sources:
@@ -56,6 +63,7 @@ An appliance OS (like TrueNAS Scale) switching its bundled driver from proprieta
 ## Related
 
 - Concept: [PCI address drift breaking hypervisor passthrough](../proxmox/pci-address-drift-passthrough.md) — a separate, hypervisor-level GPU passthrough failure mode that can surface in the same investigation session as this driver-level one.
+- Guide: [Passing a GPU through to a TrueNAS Scale app](../../../guides/administration/truenas/gpu-passthrough-app-selection.md) — the app-level GPU selection step that sits one layer above this driver-level failure mode; a GPU cut off by this issue never shows up as selectable there.
 
 ## Sources
 

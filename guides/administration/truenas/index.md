@@ -5,3 +5,4 @@
 ## Pages
 
 - [TrueNAS Scale ACME certificates via DNS-01 with a shell authenticator](acme-dns-challenge-shell-authenticator.md) — Set up automatic Let's Encrypt TLS certificates on TrueNAS Scale using the shell DNS authenticator plugin for any DNS provider without built-in support.
+- [Passing a GPU through to a TrueNAS Scale app](gpu-passthrough-app-selection.md) — Select a GPU for a TrueNAS Scale app (no PCI passthrough/isolation needed) and work around the 24.10 GPU-selection bug via midclt.

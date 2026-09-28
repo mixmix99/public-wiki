@@ -2,19 +2,26 @@
 type: concept
 title: WireGuard endpoint DNS re-resolution
 description: Why a WireGuard peer with a dynamic-IP endpoint hostname stops reconnecting after an IP change, and how to periodically re-resolve it on Linux and OPNsense.
-tags: [wireguard, vpn, dns, dynamic-dns, systemd]
+tags:
+- wireguard
+- vpn
+- dns
+- dynamic-dns
+- systemd
 status: draft
 resource:
 created: 2026-09-28T17:01:18Z
-updated: 2026-09-28T17:01:18Z
+updated: 2026-09-28T18:55:16Z
 generated:
   by: claude/sonnet-5
-  at: 2026-09-28T17:01:18Z
+  at: 2026-09-28T18:55:16Z
 verified: []
 stale_after: 2028-09-27T17:01:18Z
 sources:
 - id: 2026-09-28-wireguard-dns-reresolve
-  resource: 'private:/sources/network/vpn/2026-09-28-wireguard-dns-reresolve.md'
+  resource: private:/sources/network/vpn/2026-09-28-wireguard-dns-reresolve.md
+- id: 2026-09-28-wireguard-hetzner-cron-reresolve
+  resource: private:/sources/network/vpn/2026-09-28-wireguard-hetzner-cron-reresolve.md
 relations: []
 superseded_by:
 ---
@@ -95,6 +102,40 @@ systemctl enable --now wg-reresolve-dns@wg0.timer
 (A third-party one-line installer script exists that sets up the same unit/timer pair
 automatically — functionally equivalent to creating the files above by hand.)
 
+**Cron alternative:** the systemd timer isn't required — a plain crontab entry works just as well
+if the host doesn't run systemd or a coarser interval is acceptable:
+
+```cron
+*/15 * * * * /usr/share/doc/wireguard-tools/examples/reresolve-dns/reresolve-dns.sh wg0 >> /var/log/wg-reresolve.log 2>&1
+```
+
+Every 15 minutes is markedly coarser than the ~30 s systemd-timer interval above, so a peer's
+outage after an IP change can last up to ~15 minutes with this variant instead of under a minute —
+acceptable when the tunnel isn't latency- or availability-critical. The script itself only logs
+when it actually changes an endpoint, so the log file stays quiet during normal operation.
+
+#### How `reresolve-dns.sh` decides what to touch
+
+The script is a line-by-line parser for the WireGuard `.conf` file, paired with a decision
+function run per peer:
+
+1. Parse each `[Peer]` block, collecting only its `PublicKey` and `Endpoint` (all other keys are
+   ignored). The decision function runs at every new section header and again at end of file.
+2. For each peer: skip it if it has no `PublicKey`+`Endpoint` pair, skip it if `wg` reports no
+   handshake for it at all, and skip it if its last handshake is **not yet older than 135
+   seconds**. Only a peer that fails all three skip checks gets re-resolved, via
+   `wg set <interface> peer <key> endpoint <host:port>` — `<host:port>` still contains the
+   original **hostname** from the config, so this call is what triggers the fresh DNS lookup, with
+   no separate `dig`/`getent` step.
+3. **The 135-second threshold** is deliberately set above WireGuard's default 25-second keepalive
+   interval, so a peer that's merely quiet between keepalives is never mistaken for a dead one —
+   only a peer with no successful handshake for well over one keepalive cycle gets touched.
+
+**What the script deliberately does *not* do:** restart the WireGuard interface or drop any
+existing connection, log anything when an endpoint update is *not* needed, or handle peers that
+have no `Endpoint` configured at all (inbound-only/road-warrior clients, which have nothing to
+re-resolve).
+
 ### OPNsense: periodic re-apply via cron
 
 OPNsense doesn't ship an equivalent script out of the box; the documented approach is a
@@ -117,3 +158,4 @@ underlying IP changed.
 ## Sources
 
 - [Legacy wiki.js: WireGuard DNS re-resolve on Linux](../../../../../sources/network/vpn/2026-09-28-wireguard-dns-reresolve.md) — private source (original wiki.js text)
+- [Legacy wiki.js (de, translated): WireGuard dynamic DNS reconnect (cron)](../../../../../sources/network/vpn/2026-09-28-wireguard-hetzner-cron-reresolve.md) — private source; cron alternative and script-internals reference

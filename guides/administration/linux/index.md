@@ -6,3 +6,4 @@
 
 - [Benchmarking Linux disk and SSD speed with hdparm, dd and fio](hard-disk-benchmarking-tools.md) — Three common Linux tools for measuring disk/SSD read, write and random-I/O throughput, from a quick built-in check to a realistic load test.
 - [Configuring DNS resolution with systemd-resolved](systemd-resolved-dns-configuration.md) — Set up systemd-resolved for asynchronous, cached DNS resolution on a Linux host, including the symlink needed to actually use it and a Proxmox LXC gotcha.
+- [Installing telegram-send for scripted Telegram notifications](telegram-send-cli.md) — Install the telegram-send CLI and work around a python-telegram-bot version incompatibility that breaks it on first run.
