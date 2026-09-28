@@ -4,4 +4,6 @@
 
 ## Folders
 
-- [devices](devices/index.md) — 1 page
+- [components](components/index.md) — 1 page
+- [devices](devices/index.md) — 2 pages
+- [kvm](kvm/index.md) — 2 pages

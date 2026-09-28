@@ -5,4 +5,4 @@
 ## Folders
 
 - [homeassistant](homeassistant/index.md) — 3 pages
-- [zigbee](zigbee/index.md) — 1 page
+- [zigbee](zigbee/index.md) — 2 pages

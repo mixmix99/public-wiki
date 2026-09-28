@@ -5,3 +5,4 @@
 ## Pages
 
 - [Programming the Auerswald TFS-Dialog 200 door intercom](auerswald-tfs-dialog-200-programming.md) — Enter programming mode on an Auerswald TFS-Dialog 200 via a PBX phone and set call targets, door-opener, light, timing, volume and PIN.
+- [Banana Pi M2 Zero: Armbian setup and USB OTG host mode fix](banana-pi-m2-zero-armbian-setup.md) — Headless Armbian installation and the g_serial gadget-driver fix for reliable USB host mode on the Banana Pi M2 Zero (Allwinner H2+).

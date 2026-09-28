@@ -2,14 +2,19 @@
 type: concept
 title: Detecting Zigbee2MQTT coordinator hangs
 description: Why the bridge connection state misses radio hangs and how mains-powered canary router devices detect them reliably.
-tags: [zigbee2mqtt, zigbee, watchdog, homeassistant, smlight]
+tags:
+- zigbee2mqtt
+- zigbee
+- watchdog
+- homeassistant
+- smlight
 status: draft
 resource:
 created: 2026-09-27T19:34:18Z
-updated: 2026-09-27T19:34:18Z
+updated: 2026-09-28T17:06:39Z
 generated:
-  by: claude/opus-5.5
-  at: 2026-09-27T19:34:18Z
+  by: claude/sonnet-5
+  at: 2026-09-28T17:06:39Z
 verified: []
 stale_after: 2028-09-26T19:34:18Z
 sources:
@@ -98,6 +103,11 @@ are down, which means a mesh-wide failure rather than one device losing power.
 - A single canary restarts the coordinator whenever that one device is unplugged. Use at least two.
 - Check `last_triggered` on the automation after a real incident. A watchdog that has never fired
   may simply be watching the wrong entity.
+
+## Related
+
+- [Setting up SMLIGHT SLZB Zigbee coordinators with Zigbee2MQTT over TCP](../../../guides/home-automation/zigbee/slzb-zigbee2mqtt-tcp-setup.md) — coordinator/bridge setup this watchdog pattern runs against.
+- [Zigbee2MQTT ZCL reporting: raw units and reducing reporting noise](zigbee2mqtt-zcl-reporting-units.md) — a different class of Zigbee2MQTT health-signal pitfall (per-device reporting vs. bridge/mesh health).
 
 ## Sources
 

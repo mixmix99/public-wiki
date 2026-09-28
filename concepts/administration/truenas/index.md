@@ -5,3 +5,4 @@
 ## Pages
 
 - [NVIDIA open kernel module dropping Pascal GPU support](nvidia-open-driver-pascal-support.md) — TrueNAS Scale (and other distros) moving to NVIDIA's open-source kernel module drops hardware support for Pascal-generation GPUs, silently breaking transcoding/CUDA workloads.
+- [SMART health polling can wake drives despite an idle spindown timer](smart-polling-ignores-drive-standby.md) — Why a periodic SMART health check that ignores drive power state can repeatedly wake spun-down drives even when a separate idle-timeout spindown tool is working correctly.

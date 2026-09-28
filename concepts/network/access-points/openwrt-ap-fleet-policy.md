@@ -2,14 +2,20 @@
 type: concept
 title: OpenWrt multi-AP fleet policy
 description: 'Generic policy pattern for a fleet of dumb OpenWrt access points: 802.11r/k/v roaming, a fixed 5GHz / auto 2.4GHz channel plan, disabling IPv6 on dumb APs, and consistent SSID naming.'
-tags: [openwrt, wifi, access-point, roaming, channel-plan, ipv6]
+tags:
+- openwrt
+- wifi
+- access-point
+- roaming
+- channel-plan
+- ipv6
 status: draft
 resource:
 created: 2026-09-27T19:48:50Z
-updated: 2026-09-27T19:48:50Z
+updated: 2026-09-28T17:07:17Z
 generated:
   by: claude/sonnet-5
-  at: 2026-09-27T19:48:50Z
+  at: 2026-09-28T17:07:17Z
 verified: []
 stale_after: 2028-09-26T19:48:50Z
 sources:
@@ -36,7 +42,9 @@ four settings are enforced identically everywhere:
 
 Configure Fast BSS Transition (802.11r), Neighbor Reports (802.11k) and BSS Transition Management
 (802.11v) on the SSID(s) where roaming matters most (typically the highest-traffic/shortest-range
-band):
+band). See [OpenWrt seamless Wi-Fi roaming with 802.11r/k/v and usteer](../wifi/openwrt-seamless-roaming.md)
+for the full standards explanation, `usteer` internals, verification commands and a rollback
+procedure — summarized here as one of the fleet's four policy pillars:
 
 | UCI option | Value | Meaning |
 |---|---|---|
@@ -183,7 +191,7 @@ this can have a real throughput cost on constrained/single-core hardware — see
 
 ## Related
 
-- (no other public pages in this wiki yet)
+- [OpenWrt seamless Wi-Fi roaming with 802.11r/k/v and usteer](../wifi/openwrt-seamless-roaming.md) — deep dive on this policy's roaming pillar.
 
 ## Sources
 

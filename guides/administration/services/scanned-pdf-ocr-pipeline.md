@@ -2,19 +2,27 @@
 type: guide
 title: Scanned PDF to searchable document pipeline with a folder watcher
 description: Build an unattended pipeline that OCRs, cleans and compresses scanned PDFs and delivers them into a document-management import folder.
-tags: [ocr, ocrmypdf, pdf, document-management, docker, samba]
+tags:
+- ocr
+- ocrmypdf
+- pdf
+- document-management
+- docker
+- samba
 status: draft
 resource:
 created: 2026-09-27T19:49:16Z
-updated: 2026-09-27T19:49:16Z
+updated: 2026-09-28T17:02:28Z
 generated:
   by: claude/sonnet-5
-  at: 2026-09-27T19:49:16Z
+  at: 2026-09-28T17:02:28Z
 verified: []
 stale_after: 2027-09-27T19:49:16Z
 sources:
 - id: 2026-09-27-pdf-scan-ocr-pipeline
-  resource: 'private:/sources/administration/services/2026-09-27-pdf-scan-ocr-pipeline.md'
+  resource: private:/sources/administration/services/2026-09-27-pdf-scan-ocr-pipeline.md
+- id: 2026-09-28-pdf-ocr-pipeline-concept
+  resource: private:/sources/administration/services/2026-09-28-pdf-ocr-pipeline-concept.md
 relations: []
 superseded_by:
 ---
@@ -148,3 +156,4 @@ import folder within a few seconds to a couple of minutes depending on page coun
 ## Sources
 
 - [Legacy wiki.js: PDF scan OCR document manager pipeline](../../../../../sources/administration/services/2026-09-27-pdf-scan-ocr-pipeline.md) — private source (real configuration and fragility notes)
+- [Legacy wiki.js: Self-hosted PDF OCR pipeline (concept)](../../../../../sources/administration/services/2026-09-28-pdf-ocr-pipeline-concept.md) — private source (generic concept version; no new content beyond what's already in this guide)

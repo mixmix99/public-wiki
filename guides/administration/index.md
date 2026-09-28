@@ -4,4 +4,8 @@
 
 ## Folders
 
+- [linux](linux/index.md) — 2 pages
+- [proxmox](proxmox/index.md) — 6 pages
 - [services](services/index.md) — 3 pages
+- [truenas](truenas/index.md) — 1 page
+- [windows](windows/index.md) — 2 pages

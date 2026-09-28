@@ -5,4 +5,5 @@
 ## Pages
 
 - [Diagnosing asymmetric gigabit link faults with bidirectional iperf3](diagnosing-asymmetric-gigabit-link-faults.md) — Before blaming Wi-Fi or a chipset for a throughput problem, run iperf3 in both directions between two wired hosts to rule out a one-directional cable/switch-port fault.
+- [OpenWrt seamless Wi-Fi roaming with 802.11r/k/v and usteer](openwrt-seamless-roaming.md) — How 802.11k Neighbor Reports, 802.11r Fast BSS Transition, and 802.11v BSS Transition Management combine with a steering daemon like usteer to fix sticky Wi-Fi clients across a multi-AP network.
 - [OpenWrt throughput pitfalls: ath10k key install failures and TCP collapse over Wi-Fi](openwrt-throughput-pitfalls.md) — Two separate OpenWrt/Wi-Fi throughput failure patterns: a long-standing ath10k/hostapd 802.11r key-installation bug, CPU-bound bridging on weak single-core APs, and TCP throughput collapse for fast senders crossing a Wi-Fi hop.

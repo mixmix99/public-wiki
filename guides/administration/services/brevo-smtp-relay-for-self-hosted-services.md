@@ -2,19 +2,27 @@
 type: guide
 title: Using a transactional email API as an SMTP relay for self-hosted services
 description: Point self-hosted apps' SMTP settings at a free-tier transactional email provider (e.g. Brevo) instead of running your own mail server, including per-app config-persistence gotchas.
-tags: [email, smtp, brevo, self-hosted, docker, dkim]
+tags:
+- email
+- smtp
+- brevo
+- self-hosted
+- docker
+- dkim
 status: draft
 resource:
 created: 2026-09-27T19:49:16Z
-updated: 2026-09-27T19:49:16Z
+updated: 2026-09-28T17:02:28Z
 generated:
   by: claude/sonnet-5
-  at: 2026-09-27T19:49:16Z
+  at: 2026-09-28T17:02:28Z
 verified: []
 stale_after: 2027-09-27T19:49:16Z
 sources:
 - id: 2026-09-27-brevo-smtp-relay-setup
-  resource: 'private:/sources/administration/services/2026-09-27-brevo-smtp-relay-setup.md'
+  resource: private:/sources/administration/services/2026-09-27-brevo-smtp-relay-setup.md
+- id: 2026-09-28-transactional-email-relay-concept
+  resource: private:/sources/administration/services/2026-09-28-transactional-email-relay-concept.md
 relations: []
 superseded_by:
 ---
@@ -27,6 +35,24 @@ your own outbound mail server is its own project (reverse DNS, SPF/DKIM/DMARC, I
 getting deliverability past spam filters). A free-tier transactional email provider (Brevo,
 Mailgun, SendGrid, Postmark, etc.) gives you an authenticated SMTP relay in minutes, which every
 one of these apps can point at instead.
+
+## Why not just send email directly from the server
+
+1. **Outbound port 25 is blocked by default** on most cloud providers to curb spam. Getting it
+   unblocked requires a manual support request.
+2. **IP reputation.** Cloud provider IP ranges are shared pools with a history — a fresh VM's IP
+   may already be flagged by spam blocklists from a previous tenant, before you've sent a single
+   email.
+3. **Missing infrastructure.** Reliable delivery to Gmail/Outlook/etc. requires a matching reverse
+   DNS (PTR) record, and properly configured SPF, DKIM, and DMARC records — none of which exist by
+   default on a new server or domain.
+4. **Low volume, no history.** Occasional transactional email (a handful of messages a day) never
+   builds up enough sending reputation with major providers to reliably land in the inbox instead
+   of spam.
+
+For a handful of notification/transactional emails, running your own mail server is a lot of
+ongoing maintenance for a fragile result — handing it to a relay that already has established IP
+reputation and handles the SPF/DKIM/DMARC complexity is far less work.
 
 ## How it works
 
@@ -171,3 +197,4 @@ server.quit()
 ## Sources
 
 - [Legacy wiki.js: Brevo SMTP relay setup](../../../../../sources/administration/services/2026-09-27-brevo-smtp-relay-setup.md) — private source (real configuration)
+- [Legacy wiki.js: Sending email via a transactional relay (concept)](../../../../../sources/administration/services/2026-09-28-transactional-email-relay-concept.md) — private source (generic concept, "why not send directly" reasoning)

@@ -2,14 +2,19 @@
 type: concept
 title: PCI address drift breaking hypervisor passthrough
 description: Why PCIe device addresses can shift between reboots and silently break GPU/NIC passthrough configs that pin a fixed bus address, and how to detect and mitigate it.
-tags: [proxmox, pci-passthrough, vfio, kvm, hypervisor]
+tags:
+- proxmox
+- pci-passthrough
+- vfio
+- kvm
+- hypervisor
 status: draft
 resource:
 created: 2026-09-27T19:54:26Z
-updated: 2026-09-27T19:54:26Z
+updated: 2026-09-28T17:06:08Z
 generated:
   by: claude/sonnet-5
-  at: 2026-09-27T19:54:26Z
+  at: 2026-09-28T17:06:08Z
 verified: []
 stale_after: 2028-09-26T19:54:26Z
 sources:
@@ -47,6 +52,7 @@ This risk exists any time a passthrough config references a device by **raw PCI 
 ## Related
 
 - Concept: [NVIDIA open kernel module dropping Pascal GPU support](../truenas/nvidia-open-driver-pascal-support.md) — a separate, driver-level GPU passthrough failure mode sometimes found in the same investigation session as PCI address drift.
+- Guide: [GPU passthrough on Proxmox VE](../../../guides/administration/proxmox/gpu-passthrough-setup.md) — the passthrough setup this failure mode most commonly breaks.
 
 ## Sources
 

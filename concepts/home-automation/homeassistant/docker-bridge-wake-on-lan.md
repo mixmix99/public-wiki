@@ -12,10 +12,10 @@ tags:
 status: draft
 resource:
 created: 2026-09-27T19:54:27Z
-updated: 2026-09-27T20:10:59Z
+updated: 2026-09-28T17:06:25Z
 generated:
-  by: claude/opus-5.5
-  at: 2026-09-27T20:10:59Z
+  by: claude/sonnet-5
+  at: 2026-09-28T17:06:25Z
 verified: []
 stale_after: 2028-09-26T19:54:27Z
 sources:
@@ -55,7 +55,7 @@ The relay approach is a good default when the main application is otherwise work
 
 ## Related
 
-- No related public pages yet in this domain.
+- [Controlling a Philips Saphi TV via JointSpace and Home Assistant, with WoL fallback](../../../guides/home-automation/devices/philips-saphi-tv-jointspace-api.md) — a concrete device integration that hits this exact problem and applies the relay-service workaround.
 
 ## Sources
 

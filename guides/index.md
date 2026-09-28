@@ -4,8 +4,9 @@
 
 ## Folders
 
-- [administration](administration/index.md) — 3 pages
+- [administration](administration/index.md) — 14 pages
 - [ai](ai/index.md) — 2 pages
 - [development](development/index.md) — 2 pages
-- [hardware](hardware/index.md) — 1 page
-- [network](network/index.md) — 1 page
+- [hardware](hardware/index.md) — 5 pages
+- [home-automation](home-automation/index.md) — 2 pages
+- [network](network/index.md) — 10 pages

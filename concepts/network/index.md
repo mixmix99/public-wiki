@@ -6,4 +6,5 @@
 
 - [access-points](access-points/index.md) — 1 page
 - [dns](dns/index.md) — 1 page
-- [wifi](wifi/index.md) — 2 pages
+- [vpn](vpn/index.md) — 1 page
+- [wifi](wifi/index.md) — 3 pages

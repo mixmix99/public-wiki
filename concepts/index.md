@@ -4,7 +4,7 @@
 
 ## Folders
 
-- [administration](administration/index.md) — 2 pages
+- [administration](administration/index.md) — 5 pages
 - [ai](ai/index.md) — 5 pages
-- [home-automation](home-automation/index.md) — 4 pages
-- [network](network/index.md) — 4 pages
+- [home-automation](home-automation/index.md) — 5 pages
+- [network](network/index.md) — 6 pages

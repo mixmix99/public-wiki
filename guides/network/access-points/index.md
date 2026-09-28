@@ -4,4 +4,11 @@
 
 ## Pages
 
+- [Cudy AP3000 Outdoor v1: OpenWrt flashing guide](cudy-ap3000-outdoor-v1-openwrt.md) — Hardware specs and how to flash OpenWrt onto a Cudy AP3000 Outdoor v1 access point via Cudy's transition firmware, plus a LuCI wireless-status display quirk.
+- [Cudy AP3000 v1: OpenWrt flashing guide](cudy-ap3000-v1-openwrt.md) — Hardware specs and how to flash OpenWrt onto a Cudy AP3000 v1 indoor access point via Cudy's transition firmware, then the official sysupgrade image.
+- [Cudy AP3000 Wall v1: OpenWrt flashing guide](cudy-ap3000-wall-v1-openwrt.md) — Hardware specs and how to flash OpenWrt onto a Cudy AP3000 Wall v1 access point, including a radio-band-numbering gotcha and an unusually long first-boot reboot.
+- [Cudy X6: OpenWrt flashing guide](cudy-x6-openwrt.md) — Hardware specs and how to flash OpenWrt onto a Cudy X6 router via Cudy's own intermediate firmware, then standard sysupgrade updates.
+- [GL.iNet GL-MT6000: OpenWrt flashing guide](glinet-gl-mt6000-openwrt.md) — Hardware specs and how to flash vanilla OpenWrt onto a GL.iNet GL-MT6000 (Flint 2) from its OpenWrt-based stock firmware via a normal sysupgrade.
 - [Upgrading OpenWrt access point firmware safely](openwrt-ap-firmware-upgrade.md) — Generic checklist for upgrading OpenWrt AP firmware: backing up config first, upgrading one device at a time, and recovering from a config wipe.
+- [Isolating a VLAN for guest Wi-Fi access on OpenWrt via LuCI](openwrt-vlan-guest-network.md) — Create an isolated guest VLAN on an OpenWrt device end-to-end through the LuCI web UI: VLAN device, bridge, DHCP-client interface, firewall zone, and assigning it to a wireless SSID.
+- [Xiaomi Mi Router AX3000T: OpenWrt flashing guide](xiaomi-ax3000t-openwrt.md) — Hardware specs and how to flash OpenWrt onto a Xiaomi Mi Router AX3000T from stock firmware via a web API command-injection exploit, plus later sysupgrade updates.

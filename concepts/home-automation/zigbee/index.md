@@ -5,3 +5,4 @@
 ## Pages
 
 - [Detecting Zigbee2MQTT coordinator hangs](zigbee2mqtt-coordinator-hang-detection.md) — Why the bridge connection state misses radio hangs and how mains-powered canary router devices detect them reliably.
+- [Zigbee2MQTT ZCL reporting: raw units and reducing reporting noise](zigbee2mqtt-zcl-reporting-units.md) — Why a device's ZCL reporting threshold is always in raw, per-device-scaled units, and how a device can spam full-state republishes via unrelated clusters updating last_seen.
