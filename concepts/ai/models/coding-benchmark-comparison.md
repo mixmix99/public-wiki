@@ -9,15 +9,17 @@ tags:
 status: draft
 resource:
 created: 2026-09-27T17:15:28Z
-updated: 2026-09-27T19:04:10Z
+updated: 2026-09-28T20:38:30Z
 generated:
-  by: hermes/gpt-6-sol
-  at: 2026-09-27T19:04:10Z
+  by: claude/sonnet-5
+  at: 2026-09-28T20:38:30Z
 verified: []
 stale_after: 2028-09-26T17:15:28Z
 sources:
 - id: 2026-09-27-current-model-overview
   resource: private:/sources/ai/models/2026-09-27-current-model-overview.md
+- id: 2026-09-28-current-model-overview
+  resource: private:/sources/ai/models/2026-09-28-current-model-overview.md
 - id: benchlm-coding
   resource: https://benchlm.ai/coding
 - id: swe-bench-verified
@@ -73,6 +75,12 @@ don't rely on a snapshot more than a few weeks old.
   by the model's own provider and later revised (sometimes lowered) once an independent site
   reproduces the benchmark. Prefer numbers from a site that verifies runs itself, and be skeptical
   of numbers that only ever appear on the provider's own materials.
+- **Whole-board rescales, not just per-model updates.** A leaderboard operator can revise its
+  scoring methodology and re-verify the entire board at once, shifting most models' scores by
+  several points in the same refresh (observed: a mid-2026 rescale moved many scores down 1-5
+  points board-wide, with a few outliers dropping 15+ points). A big score drop after such an
+  event does not necessarily mean the model regressed — check whether the refresh note mentions a
+  methodology/scoring change before reading it as a capability change.
 - **Scaffolding-dependent benchmarks.** SWE-bench-style and other agentic benchmarks are run with
   a specific tool/harness setup; the same underlying model can score very differently under a
   better or worse harness. A benchmark table rarely tells you which harness was used.
@@ -101,3 +109,4 @@ Check the live listings rather than a point-in-time copy:
 ## Source captures (private)
 
 - [Original source notes (private)](../../../../../sources/ai/models/2026-09-27-current-model-overview.md)
+- [Later refresh, illustrating the whole-board rescale pitfall above (private)](../../../../../sources/ai/models/2026-09-28-current-model-overview.md)
