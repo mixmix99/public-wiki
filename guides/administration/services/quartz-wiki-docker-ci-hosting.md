@@ -12,10 +12,10 @@ tags:
 status: draft
 resource: https://quartz.jzhao.xyz/
 created: 2026-09-29T20:30:55Z
-updated: 2026-09-29T20:30:55Z
+updated: 2026-09-29T20:36:43Z
 generated:
   by: claude/sonnet-5.5
-  at: 2026-09-29T20:30:55Z
+  at: 2026-09-29T20:36:43Z
 verified: []
 stale_after: 2027-09-29T20:30:55Z
 sources:
@@ -33,7 +33,7 @@ superseded_by:
 
 # Host a markdown wiki with Quartz in Docker, built by CI
 
-[Quartz](https://quartz.jzhao.xyz/) turns a folder of markdown files into a fast static website with
+[Quartz](https://quartz.jzhao.xyz/) (background: [what Quartz is and how it builds](../../../concepts/administration/services/quartz-static-wiki.md)) turns a folder of markdown files into a fast static website with
 search, backlinks, a graph and an explorer. This guide shows a setup that needs **no second
 repository and no vendored Quartz**: one Dockerfile in the wiki repo fetches a pinned Quartz release,
 overlays your two config files, builds your markdown and serves the result with nginx. A CI job
@@ -397,6 +397,7 @@ exits non-zero.
 
 ## Related
 
+- [Quartz: markdown folder to static wiki site](../../../concepts/administration/services/quartz-static-wiki.md) — what Quartz is, how the build works, trade-offs
 - [Quartz documentation](https://quartz.jzhao.xyz/)
 
 ## Sources

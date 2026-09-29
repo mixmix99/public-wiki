@@ -5,3 +5,4 @@
 ## Pages
 
 - [Pulse self-hosted monitoring](pulse-monitoring.md) — How Pulse's server/agent monitoring pattern works, and common false-alarm pitfalls (clock drift, stale snapshot fields, auth-required API).
+- [Quartz: markdown folder to static wiki site](quartz-static-wiki.md) — What Quartz is, how its build pipeline turns markdown into a static site, and the trade-offs versus a database-backed wiki.
