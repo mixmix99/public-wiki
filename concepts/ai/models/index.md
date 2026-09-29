@@ -6,4 +6,5 @@
 
 - [Comparing LLMs by coding benchmark](coding-benchmark-comparison.md) — What common coding benchmarks (SWE-bench, LiveCodeBench-style aggregates, arena ratings) actually measure and how to read a price/performance leaderboard.
 - [Sizing context windows by measured VRAM/KV-cache cost](context-window-vram-sizing.md) — How to empirically determine the safe max context window for a local LLM based on measured VRAM cost per token.
+- [Current LLM coding leaderboard](current-model-overview.md) — A refreshed top-100 coding leaderboard combining BenchLM coding scores with OpenRouter token pricing.
 - [llama.cpp vs Ollama on an older Pascal datacenter GPU](llama-cpp-vs-ollama-pascal.md) — How llama.cpp compares to Ollama for throughput and KV-cache efficiency on a previous-generation (Pascal) datacenter GPU.

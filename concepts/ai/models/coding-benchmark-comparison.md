@@ -93,6 +93,7 @@ don't rely on a snapshot more than a few weeks old.
 
 ## Related
 
+- [Current LLM coding leaderboard](current-model-overview.md) — automatically refreshed BenchLM coding scores with OpenRouter-listed API prices; treat it as a dated snapshot, not a universal model ranking.
 - [Sizing context windows by measured VRAM/KV-cache cost](context-window-vram-sizing.md) — for
   self-hosted models, the benchmark score is only half the picture; whether it fits your hardware
   at a usable context length is the other half.
