@@ -3,13 +3,13 @@ type: concept
 title: Current LLM coding leaderboard
 description: A refreshed top-100 coding leaderboard combining BenchLM coding scores with OpenRouter token pricing.
 tags: []
-status: draft
+status: stable
 resource:
 created: 2026-09-29T21:15:15Z
-updated: 2026-09-29T21:20:53Z
+updated: 2026-09-29T21:22:58Z
 generated:
   by: hermes/gpt-6-luna
-  at: 2026-09-29T21:20:53Z
+  at: 2026-09-29T21:22:58Z
 verified: []
 stale_after: 2028-09-28T21:15:15Z
 sources:
