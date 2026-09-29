@@ -6,10 +6,10 @@ tags: []
 status: stable
 resource:
 created: 2026-09-29T21:15:15Z
-updated: 2026-09-29T21:47:55Z
+updated: 2026-09-29T21:50:08Z
 generated:
   by: hermes/gpt-6-sol
-  at: 2026-09-29T21:47:55Z
+  at: 2026-09-29T21:50:08Z
 verified: []
 stale_after: 2028-09-28T21:15:15Z
 sources:
@@ -29,7 +29,7 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 
 ## Snapshot and ranked lane
 
-- Generated/fetched: 2026-09-29T21:47:55Z (UTC); BenchLM payload last updated: 2026-09-29; BenchLM HTTP fetched: Tue, 29 Sep 2026 21:47:55 GMT; OpenRouter HTTP fetched: Tue, 29 Sep 2026 21:47:55 GMT.
+- Generated/fetched: 2026-09-29T21:50:08Z (UTC); BenchLM payload last updated: 2026-09-29; BenchLM HTTP fetched: Tue, 29 Sep 2026 21:50:08 GMT; OpenRouter HTTP fetched: Tue, 29 Sep 2026 21:50:08 GMT.
 - BenchLM snapshot: `2026-09-29-3413f907dee2b747`; methodology: `bench-align-v5.7-2026-09-24`; license: **CC BY-NC 4.0**. Attribution: **Data from BenchLM.ai**. Non-commercial use only under that license; commercial use requires permission from BenchLM.
 - This table uses the rank order and `categoryScores.coding` values from the requested coding endpoint. It includes rows with different source evidence levels (including supported, reported, and estimated); this is not a verified-only lane. Scores and ranks are source-provided, not recalculated here.
 - BenchLM's aggregate methodology and underlying benchmark set can change between snapshots. Do not read small score/rank changes as capability changes without checking the methodology version and source evidence.
@@ -40,7 +40,6 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 
 | # | Model (provider) | BenchLM coding | Input $/1M | Output $/1M | Context | [🔬](https://benchlm.ai/data "BenchLM coding ranking source") | [↗](https://openrouter.ai/rankings "OpenRouter model pages") |
 |---:|---|---:|---:|---:|---:|---|---|
-
 | 1 | [Claude Sonnet 5.5](https://openrouter.ai/models/anthropic/claude-sonnet-5.5) (Anthropic) | 85.12 | $2 | $10 | 1M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 1") | [↗](https://openrouter.ai/models/anthropic/claude-sonnet-5.5 "OpenRouter model page: Claude Sonnet 5.5") |
 | 2 | [Claude Opus 5.5](https://openrouter.ai/models/anthropic/claude-opus-5.5) (Anthropic) | 83.60 | $4 | $20 | 1M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 2") | [↗](https://openrouter.ai/models/anthropic/claude-opus-5.5 "OpenRouter model page: Claude Opus 5.5") |
 | 3 | [Claude Fable 5.1](https://openrouter.ai/models/anthropic/claude-fable-5.1) (Anthropic) | 79.99 | $10 | $50 | 1M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 3") | [↗](https://openrouter.ai/models/anthropic/claude-fable-5.1 "OpenRouter model page: Claude Fable 5.1") |
@@ -157,8 +156,8 @@ Prices are OpenRouter's `pricing.prompt` and `pricing.completion` USD per token 
 - 2026-09-29: No material rank, score, or price changes (100 rows).
 - 2026-09-29: No material rank, score, or price changes (100 rows).
 - 2026-09-29: No material rank, score, or price changes (100 rows).
+- 2026-09-29: No material rank, score, or price changes (100 rows).
 - 2026-09-29: 1 matched OpenRouter prices changed.
-- 2026-09-29: Initial generated snapshot (100 ranked models).
 
 ## Sources and license
 
