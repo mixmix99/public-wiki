@@ -6,10 +6,10 @@ tags: []
 status: stable
 resource:
 created: 2026-09-29T21:15:15Z
-updated: 2026-09-29T21:22:58Z
+updated: 2026-09-29T21:27:14Z
 generated:
-  by: hermes/gpt-6-luna
-  at: 2026-09-29T21:22:58Z
+  by: hermes/gpt-6-sol
+  at: 2026-09-29T21:27:14Z
 verified: []
 stale_after: 2028-09-28T21:15:15Z
 sources:
@@ -29,7 +29,7 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 
 ## Snapshot and ranked lane
 
-- Generated/fetched: 2026-09-29T21:20:52Z (UTC); BenchLM payload last updated: 2026-09-29; BenchLM HTTP fetched: Tue, 29 Sep 2026 21:20:52 GMT; OpenRouter HTTP fetched: Tue, 29 Sep 2026 21:20:52 GMT.
+- Generated/fetched: 2026-09-29T21:27:14Z (UTC); BenchLM payload last updated: 2026-09-29; BenchLM HTTP fetched: Tue, 29 Sep 2026 21:27:14 GMT; OpenRouter HTTP fetched: Tue, 29 Sep 2026 21:27:14 GMT.
 - BenchLM snapshot: `2026-09-29-3413f907dee2b747`; methodology: `bench-align-v5.7-2026-09-24`; license: **CC BY-NC 4.0**. Attribution: **Data from BenchLM.ai**. Non-commercial use only under that license; commercial use requires permission from BenchLM.
 - This table uses the rank order and `categoryScores.coding` values from the requested coding endpoint. It includes the endpoint's evidence labels, including supported/reported/estimated rows; it is not a verified-only lane. Scores and ranks are source-provided, not recalculated here.
 - BenchLM's aggregate methodology and underlying benchmark set can change between snapshots. Do not read small score/rank changes as capability changes without checking the methodology version and source evidence.
@@ -121,7 +121,7 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 | 81 | [GPT-5 (medium)](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) (OpenAI) | 34.19 | estimated | — | — | — | [ranked data](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) | — |
 | 82 | [Ling 3.0 Flash](https://openrouter.ai/models/inclusionai/ling-3.0-flash) (InclusionAI) | 34.07 | supported | $0.021 | $0.063 | 262,144 | [ranked data](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) | [model page](https://openrouter.ai/models/inclusionai/ling-3.0-flash) |
 | 83 | [GLM-5V-Turbo](https://openrouter.ai/models/z-ai/glm-5v-turbo) (Z.AI) | 34.02 | estimated | $1.2 | $4 | 202,752 | [ranked data](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) | [model page](https://openrouter.ai/models/z-ai/glm-5v-turbo) |
-| 84 | [Gemma 4 26B A4B](https://openrouter.ai/models/google/gemma-4-26b-a4b-it) (Google) | 33.95 | supported | $0.09 | $0.3 | 262,144 | [ranked data](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) | [model page](https://openrouter.ai/models/google/gemma-4-26b-a4b-it) |
+| 84 | [Gemma 4 26B A4B](https://openrouter.ai/models/google/gemma-4-26b-a4b-it) (Google) | 33.95 | supported | $0.0765 | $0.255 | 262,144 | [ranked data](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) | [model page](https://openrouter.ai/models/google/gemma-4-26b-a4b-it) |
 | 85 | [GPT-5.1-Codex](https://openrouter.ai/models/openai/gpt-5.1-codex) (OpenAI) | 32.71 | estimated | $1.25 | $10 | 400,000 | [ranked data](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) | [model page](https://openrouter.ai/models/openai/gpt-5.1-codex) |
 | 86 | [DeepSeek V3.2 (Thinking)](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) (DeepSeek) | 32.42 | estimated | — | — | — | [ranked data](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) | — |
 | 87 | [Qwen3.5-27B](https://openrouter.ai/models/qwen/qwen3.5-27b) (Alibaba) | 32.29 | estimated | $0.195 | $1.56 | 262,144 | [ranked data](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100) | [model page](https://openrouter.ai/models/qwen/qwen3.5-27b) |
@@ -150,6 +150,7 @@ Prices are OpenRouter's `pricing.prompt` and `pricing.completion` USD per token 
 
 ## Changelog
 
+- 2026-09-29: 1 matched OpenRouter prices changed.
 - 2026-09-29: Initial generated snapshot (100 ranked models).
 
 ## Sources and license
