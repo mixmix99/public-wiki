@@ -5,5 +5,6 @@
 ## Pages
 
 - [Using a transactional email API as an SMTP relay for self-hosted services](brevo-smtp-relay-for-self-hosted-services.md) — Point self-hosted apps' SMTP settings at a free-tier transactional email provider (e.g. Brevo) instead of running your own mail server, including per-app config-persistence gotchas.
+- [Host a markdown wiki with Quartz in Docker, built by CI](quartz-wiki-docker-ci-hosting.md) — Publish a folder of markdown pages as a Quartz static site: one Dockerfile that fetches a pinned Quartz, a CI workflow that rebuilds on every push, and a fail-closed guard for publishing only part of a repository.
 - [Scanned PDF to searchable document pipeline with a folder watcher](scanned-pdf-ocr-pipeline.md) — Build an unattended pipeline that OCRs, cleans and compresses scanned PDFs and delivers them into a document-management import folder.
 - [On-demand wake and idle shutdown for a reverse-proxied host via Traefik](traefik-on-demand-wake-on-lan-idle-shutdown.md) — Use a Traefik middleware plugin plus a wake/shutdown API to wake a sleeping backend on first request and power it back down after inactivity.

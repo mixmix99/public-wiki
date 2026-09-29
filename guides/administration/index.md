@@ -7,6 +7,6 @@
 - [backup](backup/index.md) — 1 page
 - [linux](linux/index.md) — 3 pages
 - [proxmox](proxmox/index.md) — 7 pages
-- [services](services/index.md) — 3 pages
+- [services](services/index.md) — 4 pages
 - [truenas](truenas/index.md) — 2 pages
 - [windows](windows/index.md) — 2 pages
