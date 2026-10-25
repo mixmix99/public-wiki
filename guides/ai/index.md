@@ -4,4 +4,4 @@
 
 ## Folders
 
-- [tooling](tooling/index.md) — 2 pages
+- [tooling](tooling/index.md) — 3 pages

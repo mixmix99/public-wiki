@@ -4,5 +4,6 @@
 
 ## Folders
 
+- [ci](ci/index.md) — 1 page
 - [editors](editors/index.md) — 1 page
 - [microcontrollers](microcontrollers/index.md) — 1 page

@@ -4,5 +4,6 @@
 
 ## Pages
 
+- [Agent-first CLI for a web app](agent-first-cli-for-web-apps.md) — How to build a fast, scriptable CLI that AI agents use as a first-class client of a web app: JSON contract, exit codes, short ids, safe writes, generated skill, stack.
 - [Coding-agent CLI as a sub-agent vs. as a model provider](coding-agent-cli-subagent-vs-provider.md) — Why a coding-agent CLI plugs cleanly into another agent as an invoked sub-agent, but not as a chat-completions model provider with tool-calling.
 - [LLM wiki: a beginner’s guide](wiki-llm-concept.md) — A simple explanation of an AI-maintained knowledge base, its portable file format, and how to keep it trustworthy.

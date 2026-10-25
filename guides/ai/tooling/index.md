@@ -4,5 +4,6 @@
 
 ## Pages
 
+- [Generating an agent skill from the CLI itself](generated-agent-skill-for-a-cli.md) — Let a CLI generate and install its own agent skill from its command tree, with a version check and a drift test.
 - [Headless browser automation in a rootless container](headless-browser-rootless-container.md) — Getting a CDP-driven headless Chrome/Chromium working inside a rootless container: missing shared libraries and a fontconfig crash.
 - [Building an OpenClaw agent skill](openclaw-skill-development.md) — How to structure a skill folder, SKILL.md frontmatter, and a Python CLI pattern for OpenClaw agent skills.
