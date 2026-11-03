@@ -2,19 +2,25 @@
 type: guide
 title: Setting up SMLIGHT SLZB Zigbee coordinators with Zigbee2MQTT over TCP
 description: Generic setup, adapter selection, and troubleshooting guide for SMLIGHT SLZB Zigbee coordinators connected to Zigbee2MQTT containers over a TCP socket.
-tags: [zigbee, slzb, zigbee2mqtt, mqtt, home-automation, docker]
+tags:
+- zigbee
+- slzb
+- zigbee2mqtt
+- mqtt
+- home-automation
+- docker
 status: draft
 resource:
 created: 2026-09-28T17:02:16Z
-updated: 2026-09-28T17:02:16Z
+updated: 2026-11-03T20:10:56Z
 generated:
-  by: claude/sonnet-5
-  at: 2026-09-28T17:02:16Z
+  by: claude/sonnet-5.5
+  at: 2026-11-03T20:10:56Z
 verified: []
 stale_after: 2027-09-28T17:02:16Z
 sources:
 - id: slzb-zigbee2mqtt-setup
-  resource: 'private:/sources/home-automation/zigbee/2026-09-28-slzb-zigbee2mqtt-setup.md'
+  resource: private:/sources/home-automation/zigbee/2026-09-28-slzb-zigbee2mqtt-setup.md
 relations: []
 superseded_by:
 ---
@@ -147,6 +153,14 @@ Check causes in this order (most likely first):
 4. Coordinator overheating — move it to a ventilated location.
 5. A second client is connected to the socket — check open connections to the coordinator's port
    from the z2m host.
+6. An automation that resets the coordinator (for example a hang watchdog) — its reset command is
+   itself a disconnect and appears in the z2m log as `ECONNRESET`. Compare the log time with the
+   automation's `last_triggered` before suspecting the hardware.
+7. A coordinator that keeps dropping off the network (intermittent ping loss, port timing out) or
+   runs a development firmware channel is failing or unstable — switch to the stable firmware
+   channel and, if it persists, replace the coordinator. If the replacement uses a different chip
+   family, see
+   [Migrating a Zigbee2MQTT network from a Z-Stack to an EmberZNet coordinator](migrate-zstack-to-ember-coordinator.md).
 
 ### A container restart briefly disrupts every other container on the same bridge network
 
@@ -170,6 +184,7 @@ devices or routers, which should always respond.
 
 ## Related
 
+- [Migrating a Zigbee2MQTT network from a Z-Stack to an EmberZNet coordinator](migrate-zstack-to-ember-coordinator.md) — move a network to a coordinator of the other chip family without re-pairing.
 - [Detecting Zigbee2MQTT coordinator hangs](../../../concepts/home-automation/zigbee/zigbee2mqtt-coordinator-hang-detection.md) — the connection-state sensor can stay "connected" while the coordinator radio itself is hung; use mains-powered canary devices instead.
 - [Zigbee2MQTT ZCL reporting: raw units and reducing reporting noise](../../../concepts/home-automation/zigbee/zigbee2mqtt-zcl-reporting-units.md) — a separate class of per-device tuning once devices are joined.
 

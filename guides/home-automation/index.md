@@ -5,4 +5,4 @@
 ## Folders
 
 - [devices](devices/index.md) — 1 page
-- [zigbee](zigbee/index.md) — 1 page
+- [zigbee](zigbee/index.md) — 2 pages

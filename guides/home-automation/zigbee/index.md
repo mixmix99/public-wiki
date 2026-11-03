@@ -4,4 +4,5 @@
 
 ## Pages
 
+- [Migrating a Zigbee2MQTT network from a Z-Stack to an EmberZNet coordinator](migrate-zstack-to-ember-coordinator.md) — How to move a Zigbee2MQTT network from a TI Z-Stack coordinator to a Silicon Labs EmberZNet coordinator (e.g. SMLIGHT SLZB) without re-pairing devices.
 - [Setting up SMLIGHT SLZB Zigbee coordinators with Zigbee2MQTT over TCP](slzb-zigbee2mqtt-tcp-setup.md) — Generic setup, adapter selection, and troubleshooting guide for SMLIGHT SLZB Zigbee coordinators connected to Zigbee2MQTT containers over a TCP socket.
