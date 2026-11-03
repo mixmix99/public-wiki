@@ -2,19 +2,28 @@
 type: guide
 title: Migrating a Zigbee2MQTT network from a Z-Stack to an EmberZNet coordinator
 description: How to move a Zigbee2MQTT network from a TI Z-Stack coordinator to a Silicon Labs EmberZNet coordinator (e.g. SMLIGHT SLZB) without re-pairing devices.
-tags: [zigbee, zigbee2mqtt, slzb, migration, zstack, ember, coordinator]
-status: draft
+tags:
+- zigbee
+- zigbee2mqtt
+- slzb
+- migration
+- zstack
+- ember
+- coordinator
+status: stable
 resource:
 created: 2026-11-03T20:09:11Z
 updated: 2026-11-03T21:15:00Z
 generated:
   by: claude/sonnet-5.5
   at: 2026-11-03T21:15:00Z
-verified: []
-stale_after: 2027-11-03T20:09:11Z
+verified:
+- by: human:frederic
+  at: 2026-11-03T20:13:52Z
+stale_after: 2027-11-03T20:13:52Z
 sources:
 - id: slzb-coordinator-migration
-  resource: 'private:/sources/home-automation/zigbee/2026-11-03-slzb-coordinator-migration.md'
+  resource: private:/sources/home-automation/zigbee/2026-11-03-slzb-coordinator-migration.md
 - id: z2m-migration-discussion
   resource: https://github.com/Koenkk/zigbee2mqtt/discussions/31908
 - id: z2m-different-chip-feedback
