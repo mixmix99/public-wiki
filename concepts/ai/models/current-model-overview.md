@@ -6,10 +6,10 @@ tags: []
 status: stable
 resource:
 created: 2026-09-29T21:15:15Z
-updated: 2026-11-02T08:00:57Z
+updated: 2026-11-05T08:00:59Z
 generated:
   by: process:librarian-model-overview
-  at: 2026-11-02T08:00:57Z
+  at: 2026-11-05T08:00:59Z
 verified: []
 stale_after: 2028-09-28T21:15:15Z
 sources:
@@ -29,8 +29,8 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 
 ## Snapshot and ranked lane
 
-- Generated/fetched: 2026-11-02T08:00:57Z (UTC); BenchLM payload last updated: 2026-10-29; BenchLM HTTP fetched: Mon, 02 Nov 2026 08:00:57 GMT; OpenRouter HTTP fetched: Mon, 02 Nov 2026 08:00:57 GMT.
-- BenchLM snapshot: `2026-10-29-598e80f34326e96c`; methodology: `bench-align-v5.8-2026-09-30`; license: **CC BY-NC 4.0**. Attribution: **Data from BenchLM.ai**. Non-commercial use only under that license; commercial use requires permission from BenchLM.
+- Generated/fetched: 2026-11-05T08:00:59Z (UTC); BenchLM payload last updated: 2026-11-04; BenchLM HTTP fetched: Thu, 05 Nov 2026 08:00:59 GMT; OpenRouter HTTP fetched: Thu, 05 Nov 2026 08:00:59 GMT.
+- BenchLM snapshot: `2026-11-04-7600c7a19f30b58b`; methodology: `bench-align-v5.8-2026-09-30`; license: **CC BY-NC 4.0**. Attribution: **Data from BenchLM.ai**. Non-commercial use only under that license; commercial use requires permission from BenchLM.
 - This table uses the rank order and `categoryScores.coding` values from the requested coding endpoint. It includes rows with different source evidence levels (including supported, reported, and estimated); this is not a verified-only lane. Scores and ranks are source-provided, not recalculated here.
 - BenchLM's aggregate methodology and underlying benchmark set can change between snapshots. Do not read small score/rank changes as capability changes without checking the methodology version and source evidence.
 
@@ -59,7 +59,7 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 | 17 | [GPT-5.6 Luna](https://openrouter.ai/models/openai/gpt-5.6-luna) (OpenAI) | 61.74 | $0.2 | $1.2 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 17") | [↗](https://openrouter.ai/models/openai/gpt-5.6-luna "OpenRouter model page: GPT-5.6 Luna") |
 | 18 | [Claude Opus 4.8](https://openrouter.ai/models/anthropic/claude-opus-4.8) (Anthropic) | 60.70 | $5 | $25 | 1M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 18") | [↗](https://openrouter.ai/models/anthropic/claude-opus-4.8 "OpenRouter model page: Claude Opus 4.8") |
 | 19 | [Gemini 3.8 Flash](https://openrouter.ai/models/google/gemini-3.8-flash) (Google) | 59.80 | $0.825 | $4.125 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 19") | [↗](https://openrouter.ai/models/google/gemini-3.8-flash "OpenRouter model page: Gemini 3.8 Flash") |
-| 20 | [Kimi K3](https://openrouter.ai/models/moonshotai/kimi-k3) (Moonshot AI) | 58.71 | $0.192 | $15 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 20") | [↗](https://openrouter.ai/models/moonshotai/kimi-k3 "OpenRouter model page: Kimi K3") |
+| 20 | [Kimi K3](https://openrouter.ai/models/moonshotai/kimi-k3) (Moonshot AI) | 58.71 | $0.192 | $16 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 20") | [↗](https://openrouter.ai/models/moonshotai/kimi-k3 "OpenRouter model page: Kimi K3") |
 | 21 | [Grok 4.6](https://openrouter.ai/models/x-ai/grok-4.6) (xAI) | 58.43 | $2 | $6 | 500K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 21") | [↗](https://openrouter.ai/models/x-ai/grok-4.6 "OpenRouter model page: Grok 4.6") |
 | 22 | [Ling 3.1 Flash](https://openrouter.ai/models/inclusionai/ling-3.1-flash) (InclusionAI) | 58.02 | $0.075 | $0.225 | 1M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 22") | [↗](https://openrouter.ai/models/inclusionai/ling-3.1-flash "OpenRouter model page: Ling 3.1 Flash") |
 | 23 | [Gemini 3.7 Flash](https://openrouter.ai/models/google/gemini-3.7-flash) (Google) | 57.53 | $0.75 | $3.75 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 23") | [↗](https://openrouter.ai/models/google/gemini-3.7-flash "OpenRouter model page: Gemini 3.7 Flash") |
@@ -68,7 +68,7 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 | 26 | [Hy4 preview](https://openrouter.ai/models/tencent/hy4-preview) (Tencent) | 56.33 | $0.834 | $2.501 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 26") | [↗](https://openrouter.ai/models/tencent/hy4-preview "OpenRouter model page: Hy4 preview") |
 | 27 | [MiMo-V2.6-Flash](https://openrouter.ai/models/xiaomi/mimo-v2.6-flash) (Xiaomi) | 55.67 | $0.14 | $0.28 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 27") | [↗](https://openrouter.ai/models/xiaomi/mimo-v2.6-flash "OpenRouter model page: MiMo-V2.6-Flash") |
 | 28 | [Grok 4.5](https://openrouter.ai/models/x-ai/grok-4.5) (xAI) | 55.48 | $2 | $6 | 500K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 28") | [↗](https://openrouter.ai/models/x-ai/grok-4.5 "OpenRouter model page: Grok 4.5") |
-| 29 | [GLM-5.3](https://openrouter.ai/models/z-ai/glm-5.3) (Z.AI) | 55.35 | $0.08 | $3.6 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 29") | [↗](https://openrouter.ai/models/z-ai/glm-5.3 "OpenRouter model page: GLM-5.3") |
+| 29 | [GLM-5.3](https://openrouter.ai/models/z-ai/glm-5.3) (Z.AI) | 55.35 | $0.0699 | $1.4 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 29") | [↗](https://openrouter.ai/models/z-ai/glm-5.3 "OpenRouter model page: GLM-5.3") |
 | 30 | Claude Opus 4.7 (Adaptive) (Anthropic) | 55.33 | — | — | — | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 30") | — |
 | 31 | [Claude Opus 4.7](https://openrouter.ai/models/anthropic/claude-opus-4.7) (Anthropic) | 55.08 | $5 | $25 | 1M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 31") | [↗](https://openrouter.ai/models/anthropic/claude-opus-4.7 "OpenRouter model page: Claude Opus 4.7") |
 | 32 | Sage-A1.5 (InternScience) | 55.07 | — | — | — | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 32") | — |
@@ -90,8 +90,8 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 | 48 | [Step 5 Preview](https://openrouter.ai/models/stepfun/step-5-preview) (StepFun) | 48.29 | $1 | $2.7 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 48") | [↗](https://openrouter.ai/models/stepfun/step-5-preview "OpenRouter model page: Step 5 Preview") |
 | 49 | Claude Opus 4.6 (Adaptive) (Anthropic) | 48.22 | — | — | — | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 49") | — |
 | 50 | [GPT-5.4](https://openrouter.ai/models/openai/gpt-5.4) (OpenAI) | 47.84 | $2.5 | $15 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 50") | [↗](https://openrouter.ai/models/openai/gpt-5.4 "OpenRouter model page: GPT-5.4") |
-| 51 | [DeepSeek V4 Pro 0813](https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813) (DeepSeek) | 47.71 | $0.115 | $4 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 51") | [↗](https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813 "OpenRouter model page: DeepSeek V4 Pro 0813") |
-| 52 | [GLM-5.3-Flash](https://openrouter.ai/models/z-ai/glm-5.3-flash) (Z.AI) | 47.31 | $0.0285 | $0.0923 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 52") | [↗](https://openrouter.ai/models/z-ai/glm-5.3-flash "OpenRouter model page: GLM-5.3-Flash") |
+| 51 | [DeepSeek V4 Pro 0813](https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813) (DeepSeek) | 47.71 | $0.107 | $4.278 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 51") | [↗](https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813 "OpenRouter model page: DeepSeek V4 Pro 0813") |
+| 52 | [GLM-5.3-Flash](https://openrouter.ai/models/z-ai/glm-5.3-flash) (Z.AI) | 47.31 | $0.15 | $0.5 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 52") | [↗](https://openrouter.ai/models/z-ai/glm-5.3-flash "OpenRouter model page: GLM-5.3-Flash") |
 | 53 | [GLM-5.1](https://openrouter.ai/models/z-ai/glm-5.1) (Z.AI) | 47.06 | $1.4 | $4.4 | 205K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 53") | [↗](https://openrouter.ai/models/z-ai/glm-5.1 "OpenRouter model page: GLM-5.1") |
 | 54 | [Hy3](https://openrouter.ai/models/tencent/hy3) (Tencent) | 46.93 | $0.132 | $0.528 | 262K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 54") | [↗](https://openrouter.ai/models/tencent/hy3 "OpenRouter model page: Hy3") |
 | 55 | [Claude Opus 4.6](https://openrouter.ai/models/anthropic/claude-opus-4.6) (Anthropic) | 46.13 | $5 | $25 | 1M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 55") | [↗](https://openrouter.ai/models/anthropic/claude-opus-4.6 "OpenRouter model page: Claude Opus 4.6") |
@@ -123,7 +123,7 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 | 81 | [Qwen3.6-27B](https://openrouter.ai/models/qwen/qwen3.6-27b) (Alibaba) | 35.26 | $0.45 | $2.7 | 262K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 81") | [↗](https://openrouter.ai/models/qwen/qwen3.6-27b "OpenRouter model page: Qwen3.6-27B") |
 | 82 | [Gemini 3.5 Flash-Lite](https://openrouter.ai/models/google/gemini-3.5-flash-lite) (Google) | 35.11 | $0.3 | $2.5 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 82") | [↗](https://openrouter.ai/models/google/gemini-3.5-flash-lite "OpenRouter model page: Gemini 3.5 Flash-Lite") |
 | 83 | [Qwen3.5-122B-A10B](https://openrouter.ai/models/qwen/qwen3.5-122b-a10b) (Alibaba) | 35.05 | $0.26 | $2.08 | 262K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 83") | [↗](https://openrouter.ai/models/qwen/qwen3.5-122b-a10b "OpenRouter model page: Qwen3.5-122B-A10B") |
-| 84 | [MiMo-V2.5](https://openrouter.ai/models/xiaomi/mimo-v2.5) (Xiaomi) | 35.03 | $0.4 | $2 | 1.05M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 84") | [↗](https://openrouter.ai/models/xiaomi/mimo-v2.5 "OpenRouter model page: MiMo-V2.5") |
+| 84 | [MiMo-V2.5](https://openrouter.ai/models/xiaomi/mimo-v2.5) (Xiaomi) | 35.03 | $0.4 | $2 | 1M | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 84") | [↗](https://openrouter.ai/models/xiaomi/mimo-v2.5 "OpenRouter model page: MiMo-V2.5") |
 | 85 | [MiniMax M2.7](https://openrouter.ai/models/minimax/minimax-m2.7) (MiniMax) | 34.73 | $0.3 | $1.2 | 205K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 85") | [↗](https://openrouter.ai/models/minimax/minimax-m2.7 "OpenRouter model page: MiniMax M2.7") |
 | 86 | [Qwen3.6-35B-A3B](https://openrouter.ai/models/qwen/qwen3.6-35b-a3b) (Alibaba) | 34.59 | $0.1 | $0.9 | 262K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 86") | [↗](https://openrouter.ai/models/qwen/qwen3.6-35b-a3b "OpenRouter model page: Qwen3.6-35B-A3B") |
 | 87 | [MiniMax M2.5](https://openrouter.ai/models/minimax/minimax-m2.5) (MiniMax) | 34.48 | $0.27 | $0.95 | 205K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 87") | [↗](https://openrouter.ai/models/minimax/minimax-m2.5 "OpenRouter model page: MiniMax M2.5") |
@@ -138,7 +138,7 @@ A live-generated snapshot of BenchLM's coding-ranked lane, joined conservatively
 | 96 | [Step 3.7 Flash](https://openrouter.ai/models/stepfun/step-3.7-flash) (StepFun) | 32.29 | $0.2 | $1.15 | 262K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 96") | [↗](https://openrouter.ai/models/stepfun/step-3.7-flash "OpenRouter model page: Step 3.7 Flash") |
 | 97 | [Ling 3.0 Flash](https://openrouter.ai/models/inclusionai/ling-3.0-flash) (InclusionAI) | 32.25 | $0.021 | $0.063 | 262K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 97") | [↗](https://openrouter.ai/models/inclusionai/ling-3.0-flash "OpenRouter model page: Ling 3.0 Flash") |
 | 98 | Gemini 3 Flash (Google) | 32.09 | — | — | — | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 98") | — |
-| 99 | [Gemma 4 26B A4B](https://openrouter.ai/models/google/gemma-4-26b-a4b-it) (Google) | 31.44 | $0.062 | $0.186 | 262K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 99") | [↗](https://openrouter.ai/models/google/gemma-4-26b-a4b-it "OpenRouter model page: Gemma 4 26B A4B") |
+| 99 | [Gemma 4 26B A4B](https://openrouter.ai/models/google/gemma-4-26b-a4b-it) (Google) | 31.44 | $0.032 | $0.096 | 262K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 99") | [↗](https://openrouter.ai/models/google/gemma-4-26b-a4b-it "OpenRouter model page: Gemma 4 26B A4B") |
 | 100 | [GPT-5.4 nano](https://openrouter.ai/models/openai/gpt-5.4-nano) (OpenAI) | 30.11 | $0.2 | $1.25 | 400K | [🔬](https://benchlm.ai/api/data/leaderboard?category=coding&limit=100 "BenchLM ranked data for rank 100") | [↗](https://openrouter.ai/models/openai/gpt-5.4-nano "OpenRouter model page: GPT-5.4 nano") |
 
 Prices are OpenRouter's `pricing.prompt` and `pricing.completion` USD per token multiplied by 1,000,000, i.e. standard input/output rates; cache, batch, tool, and long-context tier prices are excluded. Context is OpenRouter's listed token limit, not a guarantee of effective context. Exact normalized model-name matches with a unique OpenRouter catalog entry only; uncertain or ambiguous matches remain unlinked and unpriced (—). OpenRouter catalog name matching can miss aliases or distinct product variants; verify before purchase.
@@ -153,11 +153,11 @@ Prices are OpenRouter's `pricing.prompt` and `pricing.completion` USD per token 
 
 ## Changelog
 
+- 2026-11-05: 3 prices changed >10% or became available/unavailable (GLM-5.3, GLM-5.3-Flash, Gemma 4 26B A4B).
 - 2026-11-02: 9 prices changed >10% or became available/unavailable (DeepSeek V4 Pro 0813, GLM-4.7, GLM-5.3, GLM-5.3-Flash, Gemma 4 26B A4B…).
 - 2026-10-29: added 1 (Gemini 4 Carbon); dropped 1 (Muse Glimmer 30B); 27 rank moves >3 places; largest: Step 5 Preview 21→48, MiniMax M3.1 Flash 17→36, Apodex 1.1 63→47, Muse Spark Open 30→43, MiMo-V2.6-Pro 13→25; 5 coding scores changed >5 points (Apodex 1.1, MiMo-V2.6-Pro, MiniMax M3.1 Flash, Muse Spark Open, Step 5 Preview); 10 prices changed >10% or became available/unavailable (GLM-5.2, GLM-5.3-Flash, Gemma 4 31B, Kimi K2.7 Code, Kimi K3…).
 - 2026-10-26: added 1 (Sage-A1.5); dropped 1 (MiMo-V2-Flash); 9 prices changed >10% or became available/unavailable (GLM-5.3, GLM-5.3-Flash, Gemma 4 31B, Kimi K3, MiniMax M2.5…).
 - 2026-10-22: added 2 (MiniMax M3.1 Flash, Spark-X2.6-4B); dropped 2 (DeepSeek V3.2, o1); 11 prices changed >10% or became available/unavailable (DeepSeek V4 Pro 0813, GLM-5.1, GLM-5.2, GLM-5.3-Flash, MiMo-V2.5…).
-- 2026-10-19: added 2 (DeepSeek V4.1 Flash 1017, Muse Spark Open); dropped 2 (DeepSeek V4.1 Flash, Gemini 3.1 Flash-Lite); 9 prices changed >10% or became available/unavailable (DeepSeek V3.2, DeepSeek V4 Pro 0813, GLM-5.2, GLM-5.3, GLM-5.3-Flash…).
 
 ## Sources and license
 
