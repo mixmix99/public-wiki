@@ -5,3 +5,4 @@
 ## Pages
 
 - [WireGuard endpoint DNS re-resolution](wireguard-dns-reresolve.md) — Why a WireGuard peer with a dynamic-IP endpoint hostname stops reconnecting after an IP change, and how to periodically re-resolve it on Linux and OPNsense.
+- [WireGuard site-to-site with a Fritz.Box: split DNS and path MTU](wireguard-site-to-site-split-dns-and-mtu.md) — How a native Fritz.Box WireGuard site-to-site to a firewall behaves: routing, why DNS needs explicit forwards, and how to measure an asymmetric path MTU.
