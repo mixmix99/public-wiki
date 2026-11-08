@@ -4,7 +4,7 @@
 
 ## Folders
 
-- [linux](linux/index.md) — 1 page
+- [linux](linux/index.md) — 2 pages
 - [proxmox](proxmox/index.md) — 1 page
 - [services](services/index.md) — 2 pages
 - [truenas](truenas/index.md) — 2 pages

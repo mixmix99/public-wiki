@@ -4,4 +4,5 @@
 
 ## Pages
 
+- [Bogus MCE hardware-error events on AMD Zen 3 with Linux 7.0](amd-zen3-bogus-mce-events-linux-7.md) — How to recognise bogus 'System Fatal' machine-check log entries on AMD Zen 3 under Linux 6.19/7.0 and tell them from real hardware faults.
 - [OpenMediaVault as a Debian-based NAS distribution](openmediavault-nas-distribution.md) — What OpenMediaVault is, its benefits over building NAS storage management by hand, and its installer/default-login quirks.
