@@ -24,9 +24,8 @@ Plan for a headless Windows Server 2025 (Server Core, no desktop experience) tha
 host needs the Visual Studio **Build Tools** (C++ workload) — not the full IDE. Everything is
 done remotely over SSH/PowerShell after a short console bootstrap.
 
-> [!note] Draft
-> Written before the install was executed. Items marked **(verify)** have not yet been confirmed
-> on a real host and are updated as the setup progresses.
+> [!note] Status
+> Steps 1-8 and the Native AOT check were executed successfully on a real host (VS 2026 Build Tools, .NET 10). Items still marked **(verify)** are unconfirmed.
 
 ```mermaid
 flowchart LR
@@ -112,12 +111,11 @@ Plan a recurring update window; a build server that is never patched becomes the
 
 ### 6. Install Visual Studio Build Tools (C++ for Native AOT)
 
-Download the bootstrapper (the `aka.ms` link for the current major version; **(verify which
-version is current: VS 2022 = `17`, VS 2026 = `18`)**) and install headless:
+Download the bootstrapper (the `aka.ms` link for the current major version; **(VS 2026 = `18/stable`; VS 2022 = `17/release`. Note `18/release` does not exist)**) and install headless:
 
 ```powershell
 $dir = "C:\Setup"; New-Item -ItemType Directory -Force $dir | Out-Null
-Invoke-WebRequest https://aka.ms/vs/17/release/vs_BuildTools.exe -OutFile "$dir\vs_BuildTools.exe"
+Invoke-WebRequest https://aka.ms/vs/18/stable/vs_BuildTools.exe -OutFile "$dir\vs_BuildTools.exe"
 
 & "$dir\vs_BuildTools.exe" --quiet --wait --norestart --nocache `
   --installPath "C:\BuildTools" `
@@ -182,6 +180,8 @@ error `Platform linker not found` means the C++ workload or Windows SDK is missi
 ## Troubleshooting
 
 - **`Platform linker not found` / `link.exe` missing:** the VCTools workload is not installed or the build does not run inside a developer environment; re-run the installer with `--add Microsoft.VisualStudio.Workload.VCTools`.
+- **Long installs die with the SSH session:** run the installer as a scheduled task as SYSTEM (`Register-ScheduledTask` + `Start-ScheduledTask`) and poll its state.
+- **Installer fails with `0x8007045B`:** a restart is in progress, typically the second reboot after a cumulative update; wait for it and retry.
 - **Installer exits with 3010:** success, reboot required.
 - **SSH key ignored:** wrong ACLs on `administrators_authorized_keys`, or a user in Administrators while the key sits in the user profile.
 - **Installer hangs:** it often waits for a reboot or a pending update; check `%TEMP%\dd_*.log`.
