@@ -6,3 +6,4 @@
 
 - [Bypassing a TLS certificate warning in Microsoft Edge](edge-bypass-certificate-errors.md) — The thisisunsafe keyboard shortcut that permanently bypasses a certificate-error interstitial for one site in Microsoft Edge.
 - [Hyper-V USB device passthrough via USB/IP](hyper-v-usb-passthrough-usbip.md) — Why Hyper-V has no native USB passthrough, and how to work around it with usbipd-win and usbip-win2 sharing devices over the virtual switch.
+- [Windows Server Core build server for MSVC / Native AOT](windows-build-server-setup.md) — Step-by-step setup of a headless Windows Server Core build host with Visual Studio Build Tools and C++ for .NET Native AOT.

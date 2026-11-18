@@ -4,7 +4,7 @@
 
 ## Folders
 
-- [administration](administration/index.md) — 20 pages
+- [administration](administration/index.md) — 21 pages
 - [ai](ai/index.md) — 3 pages
 - [development](development/index.md) — 3 pages
 - [hardware](hardware/index.md) — 5 pages
